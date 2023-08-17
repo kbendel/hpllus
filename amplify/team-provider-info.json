@@ -26,7 +26,10 @@
     },
     "categories": {
       "auth": {
-        "hplus85ebf000": {}
+        "hplus30b17da4": {}
+      },
+      "api": {
+        "hplus": {}
       }
     }
   }

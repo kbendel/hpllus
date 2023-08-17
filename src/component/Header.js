@@ -1,4 +1,5 @@
 import React from 'react';
+import { Authenticator } from '@aws-amplify/ui-react';
 
 const Header = () => {
   return (
@@ -14,12 +15,22 @@ const Header = () => {
             <li><a href="#products">products</a></li>
             <li><a href="#guarantee">guarantee</a></li>
             <li><a href="#people">people</a></li>
+            <li>
+                <Authenticator>
+                  {({ signOut, user }) => (
+                    <>
+                      {user.username}
+                      <button onClick={signOut}>Sign out</button>
+                    </>
+                  )}
+        </Authenticator>
+            </li>
           </ul>
         </div>
       </nav>
       <div className="container tagline">
-        <h1 className="headline">Our Mission</h1>
-        <p>We support and encourage <em>active and healthy</em> lifestyles, by offering <em>ethically sourced</em> and <em>eco-friendly</em> nutritional products for the <em>performance-driven</em> athlete.</p>
+        <h1 className="headline">Our Mission - Be Healthy</h1>
+        <p>We support and encourage <em>active and healthy and fun</em> lifestyles, by offering <em>ethically sourced</em> and <em>eco-friendly</em> nutritional products for the <em>performance-driven</em> athlete.</p>
       </div>
     </header>
   );

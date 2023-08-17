@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+div[data-amplify-container] {
+  text-align: center;
+}
+
+div[data-amplify-container] button {
+  background-color: lightblue;
+}

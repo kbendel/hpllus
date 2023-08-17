@@ -1,6 +1,24 @@
 {
+  "api": {
+    "hplus": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
   "auth": {
-    "hplus85ebf000": {
+    "hplus30b17da4": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {

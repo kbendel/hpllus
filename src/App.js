@@ -6,6 +6,7 @@ import Header from './component/Header';
 import History from './component/History';
 import People from './component/People';
 import Products from './component/Products';
+import {withAuthenticator} from "@aws-amplify/ui-react";
 
 class App extends React.Component {
 
@@ -23,4 +24,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default withAuthenticator(App);
